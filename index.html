@@ -3,136 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Thiết Kế Mạch & Làm Đồ Án Sinh Viên Uy Tín - 0979330129</title>
-    <meta name="description" content="Chuyên thiết kế mạch điện tử dân dụng, công nghiệp, cảm biến và nhận làm đồ án sinh viên chuyên nghiệp. Đội ngũ giàu kinh nghiệm, hỗ trợ tận tâm.">
-    <meta name="keywords" content="thiết kế mạch, làm đồ án, đồ án điện tử, mạch công nghiệp, cảm biến, 0979330129">
-
+    <title>Điện Tử Hà Nội - Thiết Kế Mạch & Đồ Án Chuyên Nghiệp</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
-        .service-card { transition: all 0.3s; border: 2px solid #1e293b; }
-        .service-card:hover { border-color: #38bdf8; transform: translateY(-5px); }
-        .slideshow-container { position: relative; width: 100%; height: 100%; }
-        .slide-img { 
-            position: absolute; inset: 0; width: 100%; height: 100%; 
-            object-fit: cover; opacity: 0; transition: opacity 1s ease-in-out; 
-        }
-        .slide-img.active { opacity: 1; }
-        .project-list { column-count: 1; }
-        @media (min-width: 768px) { .project-list { column-count: 2; } }
+        .slide-container { position: relative; width: 100%; height: 350px; background: #1e293b; border-radius: 1rem; overflow: hidden; }
+        @media (min-width: 768px) { .slide-container { height: 500px; } }
+        .slide-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 1s ease-in-out; z-index: 0; }
+        .slide-img.active { opacity: 1; z-index: 10; }
+        .do-an-item { padding: 10px; border-bottom: 1px solid #1e293b; color: #cbd5e1; transition: 0.2s; font-size: 0.9rem; }
+        .do-an-item:hover { background-color: #1e293b; color: #38bdf8; padding-left: 15px; }
     </style>
 </head>
 <body>
-    <nav class="bg-slate-900 border-b border-slate-800 py-4 px-6 flex justify-between items-center sticky top-0 z-40">
-        <span class="font-bold text-sky-400 text-lg">Kỹ Thuật Điện Tử</span>
-        <div class="flex gap-4">
-            <a href="https://zalo.me/0979330129" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-xs">Zalo</a>
-            <a href="tel:0979330129" class="bg-green-600 text-white font-bold py-2 px-4 rounded-full text-xs">Gọi Ngay</a>
-        </div>
-    </nav>
 
-    <header class="py-16 px-6 text-center bg-slate-900 border-b border-slate-800">
-        <h1 class="text-3xl md:text-5xl font-bold text-sky-400 mb-4 uppercase leading-tight">Thiết Kế Mạch & Làm Đồ Án Điện Tử</h1>
-        <p class="text-slate-300 max-w-3xl mx-auto mb-8 text-lg">Đội ngũ kỹ thuật giàu kinh nghiệm chuyên phục vụ các yêu cầu dân dụng, công nghiệp, đo lường và cảm biến theo yêu cầu riêng biệt.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <div class="text-xl font-bold text-green-400 border border-slate-700 px-6 py-3 rounded-xl bg-slate-800/50">Hotline: 0979330129</div>
+    <header class="py-10 text-center bg-slate-900 border-b border-slate-800 shadow-xl">
+        <h1 class="text-4xl font-extrabold text-sky-400 uppercase tracking-tighter">ĐIỆN TỬ HÀ NỘI</h1>
+        <div class="mt-6 inline-block bg-slate-800 px-8 py-4 rounded-2xl border border-slate-700">
+            <p class="text-green-400 text-2xl font-bold uppercase tracking-widest">Hotline: 0979.330.129</p>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 py-12">
-        <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="h-80 bg-slate-800 rounded-3xl overflow-hidden relative border-2 border-slate-700 shadow-2xl">
-                <div class="slideshow-container">
-                    <img src="tk1.png" class="slide-img active" alt="Thiết kế mạch công nghiệp">
-                    <img src="tk2.png" class="slide-img" alt="Thiết kế mạch dân dụng">
-                </div>
-            </div>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
             <div>
-                <h2 class="text-3xl font-bold text-sky-300 mb-6">Thiết Kế Mạch Theo Yêu Cầu</h2>
-                <div class="space-y-4 text-slate-300 leading-relaxed text-lg">
-                    <p>• <b>Đáp ứng yêu cầu Dân dụng:</b> Mạch điều khiển thông minh, Smarthome, thiết bị gia đình.</p>
-                    <p>• <b>Phục vụ Công nghiệp:</b> Hệ thống giám sát máy móc, mạch bảo vệ công suất lớn, tự động hóa dây chuyền.</p>
-                    <p>• <b>Đo lường & Cảm biến:</b> Thiết kế mạch thu thập dữ liệu nhiệt độ, áp suất, độ ẩm, lưu lượng chính xác cao.</p>
-                    <p>• <b>Kỹ thuật chuyên sâu:</b> Lập trình PIC, STM32, Arduino, ESP32. Vẽ mạch in PCB 1-4 lớp chống nhiễu.</p>
+                <h2 class="text-2xl font-bold text-sky-300 mb-6 border-l-4 border-sky-500 pl-4 uppercase">Sản Phẩm Thực Tế</h2>
+                <div class="slide-container border border-slate-700 shadow-2xl">
+                    <img src="lam-do-an-dien-tu-ha-noi.png" class="slide-img active">
+                    <img src="thiet-ke-mach-dien-tu_theo-yeu-cau.png" class="slide-img">
+                    <img src="thiet-ke-do-an-dien-tu-pid.png" class="slide-img">
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold text-sky-300 uppercase">Dịch vụ kỹ thuật</h2>
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 space-y-5 text-lg">
+                    <p class="flex items-start">
+                        <span class="text-sky-400 mr-3 text-xl">💎</span>
+                        <span><b class="text-white text-xl">Thiết kế mạch điện tử theo yêu cầu:</b> Chuyên nhận thiết kế sơ đồ nguyên lý, vẽ mạch in PCB và gia công mạch hoàn thiện cho các dự án dân dụng & công nghiệp.</span>
+                    </p>
+                    <p class="flex items-start">
+                        <span class="text-green-400 mr-3 text-xl">✅</span>
+                        <span><b>Làm đồ án điện tử trọn gói:</b> Hỗ trợ đầy đủ từ khâu lên ý tưởng, viết Code, làm mạch thật đến file báo cáo (Slide, Word).</span>
+                    </p>
+                    <p class="flex items-start">
+                        <span class="text-green-400 mr-3 text-xl">✅</span>
+                        <span><b>Lập trình vi điều khiển:</b> Chuyên sâu PIC, STM32, Arduino, ESP32, ESP8266 (IoT), 8051.</span>
+                    </p>
+                    <p class="flex items-start">
+                        <span class="text-green-400 mr-3 text-xl">✅</span>
+                        <span><b>Giải thuật điều khiển:</b> PID ổn định nhiệt độ, tốc độ động cơ, đọc Encoder, cân điện tử.</span>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-slate-800/50 border-2 border-sky-500/30 rounded-3xl p-8 md:p-12 mb-16">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-yellow-400 mb-4 uppercase">Hỗ Trợ Làm Đồ Án Sinh Viên</h2>
-                <p class="text-slate-400 italic">Tổng hợp 30+ đề tài Vi điều khiển phổ biến và tối ưu nhất cho sinh viên</p>
-            </div>
-            <div class="project-list text-slate-300 space-y-2 text-md md:text-lg border-t border-slate-700 pt-8">
-                <div>1. Mạch đếm sản phẩm hiển thị LED 7 đoạn</div>
-                <div>2. Đèn giao thông ngã tư thông minh</div>
-                <div>3. Đồng hồ số LCD hiển thị Giờ/Phút/Giây</div>
-                <div>4. Hệ thống báo động chống trộm hồng ngoại</div>
-                <div>5. Đo nhiệt độ hiển thị LM35/LCD</div>
-                <div>6. Khóa cửa mã số Password LCD</div>
-                <div>7. Điều khiển thiết bị qua Remote hồng ngoại</div>
-                <div>8. Xe tránh vật cản cảm biến siêu âm</div>
-                <div>9. Mạch đo khoảng cách hiển thị LCD</div>
-                <div>10. Hệ thống tưới cây tự động cảm biến đất</div>
-                <div>11. Điều khiển tốc độ động cơ PWM</div>
-                <div>12. Mạch hiển thị chữ chạy LED Ma trận</div>
-                <div>13. Cánh tay Robot dùng Servo</div>
-                <div>14. Bãi giữ xe thông minh RFID</div>
-                <div>15. Xe dò line vạch đen/trắng</div>
-                <div>16. Giám sát nhiệt độ, độ ẩm qua IoT</div>
-                <div>17. Báo cháy và rò rỉ khí Gas qua SMS</div>
-                <div>18. Máy rót nước tự động dùng cảm biến</div>
-                <div>19. Đọc giá trị ADC hiển thị máy tính</div>
-                <div>20. Hệ thống chiếu sáng thông minh LDR</div>
-                <div>21. Mạch quang báo điều khiển Bluetooth</div>
-                <div>22. Máy đo nhịp tim hiển thị LCD</div>
-                <div>23. Điều khiển thiết bị bằng giọng nói</div>
-                <div>24. Chống trộm bằng cảm biến rung</div>
-                <div>25. Đo mực nước bồn chứa tự động</div>
-                <div>26. Mạch nạp pin mặt trời thông minh</div>
-                <div>27. Giám sát điện năng qua Smartphone</div>
-                <div>28. Cân điện tử dùng Loadcell</div>
-                <div>29. Hệ thống Smart Home qua ứng dụng</div>
-                <div>30. Máy rửa tay sát khuẩn tự động</div>
-            </div>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="order-2 md:order-1">
-                <h2 class="text-3xl font-bold text-green-400 mb-6">Sửa Chữa & Bảo Trì PLC</h2>
-                <p class="text-slate-400 mb-6">Chúng tôi chuyên khắc phục các sự cố điện tử công nghiệp phức tạp:</p>
-                <ul class="space-y-3 text-slate-300">
-                    <li>• Lập trình, sửa chữa PLC Siemens, Mitsubishi, Delta, Omron.</li>
-                    <li>• Cài đặt biến tần, sửa lỗi màn hình HMI.</li>
-                    <li>• Phục hồi bo mạch công suất, tủ điện tự động hóa.</li>
-                </ul>
-            </div>
-            <div class="h-64 rounded-2xl overflow-hidden border border-slate-700 order-1 md:order-2">
-                <img src="sua-chua.jpg" class="w-full h-full object-cover" alt="Sửa chữa điện tử">
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-8 border-l-4 border-yellow-500 pl-4 uppercase">30 Đề tài đồ án tiêu biểu</h2>
+            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden grid grid-cols-1 md:grid-cols-2">
+                <div class="md:border-r border-slate-700">
+                    <div class="do-an-item text-sky-400 font-bold">01. Hệ thống ổn định nhiệt độ PID</div>
+                    <div class="do-an-item text-sky-400 font-bold">02. Điều khiển tốc độ động cơ DC PID</div>
+                    <div class="do-an-item text-sky-400 font-bold">03. Mạch đo tốc độ vòng quay Encoder</div>
+                    <div class="do-an-item">04. Điều khiển vị trí Servo PID</div>
+                    <div class="do-an-item">05. Hệ thống điều khiển mực nước ổn định</div>
+                    <div class="do-an-item">06. Mạch đếm sản phẩm hiển thị LED 7 đoạn</div>
+                    <div class="do-an-item">07. Đèn giao thông ngã tư thông minh</div>
+                    <div class="do-an-item">08. Đồng hồ số LCD Giờ/Phút/Giây</div>
+                    <div class="do-an-item">09. Hệ thống báo động chống trộm hồng ngoại</div>
+                    <div class="do-an-item">10. Đo nhiệt độ môi trường hiển thị LM35</div>
+                    <div class="do-an-item">11. Khóa cửa mã số Password LCD</div>
+                    <div class="do-an-item">12. Điều khiển thiết bị qua Remote IR</div>
+                    <div class="do-an-item">13. Xe tự hành tránh vật cản siêu âm</div>
+                    <div class="do-an-item">14. Mạch đo khoảng cách hiển thị LCD</div>
+                    <div class="do-an-item">15. Hệ thống tưới cây tự động cảm biến</div>
+                </div>
+                <div>
+                    <div class="do-an-item">16. Điều khiển tốc độ động cơ PWM</div>
+                    <div class="do-an-item">17. Mạch hiển thị chữ chạy LED Ma trận</div>
+                    <div class="do-an-item">18. Cánh tay Robot linh hoạt dùng Servo</div>
+                    <div class="do-an-item">19. Quản lý bãi giữ xe thông minh RFID</div>
+                    <div class="do-an-item">20. Xe dò line vạch đen/trắng</div>
+                    <div class="do-an-item">21. Giám sát nhiệt độ, độ ẩm qua IoT</div>
+                    <div class="do-an-item">22. Báo cháy và rò rỉ khí Gas qua SMS</div>
+                    <div class="do-an-item">23. Máy rót nước tự động dùng cảm biến</div>
+                    <div class="do-an-item">24. Đọc giá trị ADC hiển thị máy tính</div>
+                    <div class="do-an-item">25. Hệ thống chiếu sáng thông minh LDR</div>
+                    <div class="do-an-item">26. Mạch quang báo điều khiển Bluetooth</div>
+                    <div class="do-an-item">27. Máy đo nhịp tim hiển thị LCD</div>
+                    <div class="do-an-item">28. Điều khiển thiết bị bằng giọng nói</div>
+                    <div class="do-an-item">29. Chống trộm bằng cảm biến rung</div>
+                    <div class="do-an-item">30. Đo mực nước bồn chứa tự động</div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center pb-24 md:pb-8">
-        <p class="text-slate-500 text-sm">© 2026 Kỹ Thuật Điện Tử. Thiết kế bởi đội ngũ chuyên nghiệp.</p>
+    
+
+    <footer class="bg-slate-900 pt-16 border-t border-slate-800" style="padding-bottom: 160px;">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="font-bold text-white uppercase text-xl mb-8 tracking-widest">LIÊN HỆ CHI TIẾT</h3>
+            <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 inline-block text-left shadow-2xl">
+                <div class="space-y-4">
+                    <p class="text-slate-200 flex items-center text-lg">
+                        <span class="bg-sky-500/20 p-2 rounded-lg text-sky-400 mr-4">📍</span> 
+                        <span><b>Địa chỉ:</b> Khu đô thị Tân Tây Đô, Tân Lập, Đan Phượng, Hà Nội</span>
+                    </p>
+                    <p class="text-slate-200 flex items-center text-lg">
+                        <span class="bg-green-500/20 p-2 rounded-lg text-green-400 mr-4">📞</span> 
+                        <span><b>Hotline/Zalo:</b> 0979.330.129</span>
+                    </p>
+                    <p class="text-slate-200 flex items-center text-lg">
+                        <span class="bg-yellow-500/20 p-2 rounded-lg text-yellow-400 mr-4">⚙️</span> 
+                        <span><b>Kỹ thuật:</b> Chuyên mạch vi điều khiển & Thiết kế PCB</span>
+                    </p>
+                </div>
+            </div>
+            <p class="text-slate-600 mt-10 text-sm italic">© 2024 Điện Tử Hà Nội - Chất Lượng Làm Nên Thương Hiệu</p>
+        </div>
     </footer>
 
-    <div class="fixed bottom-0 left-0 right-0 grid grid-cols-2 gap-2 p-4 bg-slate-900/80 backdrop-blur-md border-t border-slate-800 md:hidden z-50">
-        <a href="tel:0979330129" class="bg-green-600 text-white text-center py-4 rounded-2xl font-bold shadow-lg shadow-green-500/20">GỌI ĐIỆN</a>
-        <a href="https://zalo.me/0979330129" class="bg-blue-600 text-white text-center py-4 rounded-2xl font-bold shadow-lg shadow-blue-500/20">ZALO CHAT</a>
+    <div class="fixed bottom-0 left-0 right-0 grid grid-cols-2 gap-4 p-4 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 md:hidden z-50">
+        <a href="tel:0979330129" class="bg-green-600 text-white text-center py-4 rounded-xl font-bold uppercase shadow-lg">Gọi điện</a>
+        <a href="https://zalo.me/0979330129" class="bg-blue-600 text-white text-center py-4 rounded-xl font-bold uppercase shadow-lg">Zalo Chat</a>
     </div>
 
     <script>
-        // Xử lý Slideshow
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide-img');
         setInterval(() => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }, 3500);
+            if(slides.length > 0) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+        }, 3000);
     </script>
 </body>
 </html>
