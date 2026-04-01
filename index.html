@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="google-site-verification" content="UIjg7ORPpXqmL6GeUgeLUUadTDAlTBPCz7tRZA8fH38" />
 
-    <title>Thiết Kế Mạch Điện Tử Tại Hà Nội | Lập Trình Vi Điều Khiển STM32, PIC, AVR, ESP32</title>
+    <title>Thiết Kế Mạch Điện Tử Tại Hà Nội | Lập Trình Vi Điều Khiển STM32, ESP32, Qt/QML</title>
     
-    <meta name="description" content="Điện Tử Hà Nội chuyên thiết kế mạch điện tử theo yêu cầu, làm mạch in PCB chuyên nghiệp. Nhận lập trình vi điều khiển STM32, PIC, AVR, 8051, ESP32 và làm đồ án điện tử trọn gói tại Hà Nội.">
-    <meta name="keywords" content="thiết kế mạch điện tử, thiết kế mạch điện tử tại hà nội, lập trình vi điều khiển, lập trình vi xử lý, lập trình stm32, lập trình pic, lập trình 8051, học esp32, làm đồ án điện tử">
+    <meta name="description" content="Thiết kế mạch điện tử theo yêu cầu tại Hà Nội. Chuyên lập trình vi điều khiển STM32, ESP32 (IoT), máy cắt dây tự động, hệ thống xe sa hình. Làm đồ án điện tử trọn gói chuyên nghiệp.">
+    <meta name="keywords" content="thiết kế mạch điện tử, thiết kế mạch điện tử tại hà nội, lập trình vi điều khiển, lập trình stm32, lập trình esp32, máy cắt dây tự động, hệ thống xe sa hình, làm đồ án điện tử">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -19,26 +18,30 @@
         @media (min-width: 768px) { .slide-container { height: 500px; } }
         .slide-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 1s ease-in-out; z-index: 0; }
         .slide-img.active { opacity: 1; z-index: 10; }
-        .do-an-item { padding: 10px; border-bottom: 1px solid #1e293b; color: #cbd5e1; transition: 0.2s; font-size: 0.9rem; }
-        .do-an-item:hover { background-color: #1e293b; color: #38bdf8; padding-left: 15px; }
+        .do-an-item { padding: 12px; border-bottom: 1px solid #1e293b; color: #cbd5e1; transition: 0.2s; font-size: 0.95rem; }
+        .do-an-item:hover { background-color: #1e293b; color: #38bdf8; padding-left: 20px; }
         h3 { display: inline; font-weight: normal; }
+        .blog-content p { margin-bottom: 1.25rem; line-height: 1.75; color: #94a3b8; }
+        .highlight { color: #38bdf8; font-weight: 600; }
     </style>
 </head>
 <body>
 
     <header class="py-10 text-center bg-slate-900 border-b border-slate-800 shadow-xl">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-sky-400 uppercase tracking-tighter px-4">
-            Thiết Kế Mạch Điện Tử & Lập Trình Vi Điều Khiển Chuyên Nghiệp
+        <h1 class="text-3xl md:text-5xl font-extrabold text-sky-400 uppercase tracking-tighter px-4">
+            Thiết Kế Mạch Điện Tử & Lập Trình Vi Điều Khiển
         </h1>
-        <div class="mt-6 inline-block bg-slate-800 px-8 py-4 rounded-2xl border border-slate-700">
-            <a href="tel:0876988996" class="text-green-400 text-2xl font-bold uppercase tracking-widest">Hotline: 0876.988.996</a>
+        <p class="text-slate-400 mt-2 text-lg">Chuyên nghiệp - Chính xác - Tối ưu công nghệ tại Hà Nội</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="tel:0876988996" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg">Hotline: 0876.988.996</a>
+            <a href="https://zalo.me/0876988996" class="bg-sky-600 hover:bg-sky-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg">Zalo: Chat Ngay</a>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 py-12">
-        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
             <div>
-                <h2 class="text-2xl font-bold text-sky-300 mb-6 border-l-4 border-sky-500 pl-4 uppercase">Sản Phẩm Thiết Kế Mạch Thực Tế</h2>
+                <h2 class="text-2xl font-bold text-sky-300 mb-6 border-l-4 border-sky-500 pl-4 uppercase">Sản Phẩm Thực Tế</h2>
                 <div class="slide-container border border-slate-700 shadow-2xl">
                     <img src="lam-do-an-dien-tu-ha-noi.png" class="slide-img active" alt="Làm đồ án điện tử chuyên nghiệp tại Hà Nội">
                     <img src="thiet-ke-mach-dien-tu-theo-yeu-cau.png" class="slide-img" alt="Thiết kế mạch điện tử theo yêu cầu uy tín">
@@ -47,47 +50,68 @@
             </div>
 
             <div class="space-y-6">
-                <h2 class="text-2xl font-bold text-sky-300 uppercase">Dịch vụ kỹ thuật tại Hà Nội</h2>
-                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 space-y-5 text-lg">
+                <h2 class="text-2xl font-bold text-sky-300 uppercase">Giải Pháp Kỹ Thuật Chuyên Sâu</h2>
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 space-y-5 text-lg leading-relaxed">
                     <p class="flex items-start">
                         <span class="text-sky-400 mr-3 text-xl">💎</span>
-                        <span><b class="text-white text-xl">Thiết kế mạch điện tử theo yêu cầu:</b> Chuyên vẽ mạch in PCB, thiết kế sơ đồ nguyên lý cho dân dụng và công nghiệp tại Hà Nội.</span>
+                        <span><b class="text-white">Thiết kế mạch điện tử theo yêu cầu:</b> Chuyên vẽ PCB cao tầng, mạch nguồn công suất (Buck/Boost), điều khiển công nghiệp tại Hà Nội.</span>
                     </p>
                     <p class="flex items-start">
                         <span class="text-green-400 mr-3 text-xl">✅</span>
-                        <span><b>Làm đồ án điện tử :</b> Hỗ trợ trọn gói từ ý tưởng đến mạch thật, viết báo cáo chuyên sâu.</span>
+                        <span><b>Lập trình Vi điều khiển:</b> Làm chủ các dòng <span class="highlight">STM32 (Cortex-M), ESP32 (IoT), PIC, AVR</span>. Xử lý ngắt, DMA, I2S Audio, giao tiếp công nghiệp.</span>
                     </p>
                     <p class="flex items-start">
                         <span class="text-green-400 mr-3 text-xl">✅</span>
-                        <span><b>Lập trình vi điều khiển & Vi xử lý:</b> Chuyên các dòng <b>STM32, PIC, AVR, 8051, Arduino</b>. Nhận lập trình và <b>học ESP32</b> (IoT) thực chiến.</span>
+                        <span><b>Giao diện điều khiển (HMI):</b> Thiết kế App điều khiển trên PC/Android bằng <span class="highlight">Qt Framework & QML</span>, giao tiếp Serial/Bluetooth/WiFi.</span>
                     </p>
                     <p class="flex items-start">
                         <span class="text-green-400 mr-3 text-xl">✅</span>
-                        <span><b>Giải thuật điều khiển:</b> PID ổn định nhiệt độ, tốc độ động cơ, xử lý tín hiệu cảm biến chính xác.</span>
+                        <span><b>Tự động hóa máy móc:</b> Giải thuật PID ổn định nhiệt độ, tốc độ động cơ cho máy cắt dây, máy CNC mini, xe sa hình thông minh.</span>
                     </p>
                 </div>
             </div>
         </section>
 
+        <section class="mb-20 bg-slate-800/30 p-8 rounded-3xl border border-slate-700">
+            <h2 class="text-3xl font-bold text-sky-400 mb-8 text-center uppercase tracking-tight">Vi Điều Khiển: "Bộ Não" Quyền Năng Của Máy Móc Hiện Đại</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 blog-content">
+                <div class="md:col-span-2">
+                    <p>Trong kỷ nguyên 4.0, <span class="highlight">Vi điều khiển (Microcontroller)</span> không chỉ là linh kiện điện tử đơn thuần mà chính là "Bộ não" quyết định sự thông minh và ổn định của mọi hệ thống máy móc.</p>
+                    <p>Tại <b>thietkemachdientu.vn</b>, chúng tôi tập trung khai thác sức mạnh của các dòng chip hiện đại như <span class="highlight">STM32 và ESP32</span> để giải quyết các bài toán hóc búa nhất. Từ việc xử lý tín hiệu cảm biến chính xác cao đến điều khiển động cơ bước công suất lớn, mọi mã lệnh đều được tối ưu hóa để đạt hiệu suất cao nhất.</p>
+                    <h3 class="text-xl font-bold text-white block mb-4">Ứng dụng thực tế tiêu biểu:</h3>
+                    <ul class="list-disc list-inside space-y-3 text-slate-400 mb-6 font-light">
+                        <li><span class="text-white font-medium text-sky-300 italic">Hệ thống xe sa hình:</span> Sử dụng STM32 kết hợp ESP32 để xử lý thông báo âm thanh qua I2S và điều khiển chuyển động chính xác tuyệt đối.</li>
+                        <li><span class="text-white font-medium text-sky-300 italic">Máy cắt dây tự động:</span> Tối ưu hóa giải thuật điều khiển vị trí, giúp máy vận hành bền bỉ với độ sai số cực thấp.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900/50 p-6 rounded-2xl border border-sky-900/30 flex flex-col justify-center items-center text-center">
+                    <div class="text-5xl mb-4">⚙️</div>
+                    <p class="text-white font-bold mb-2 uppercase">Bạn cần một "Bộ não" cho dự án của mình?</p>
+                    <p class="text-sm italic mb-6 text-slate-500">Chúng tôi đồng hành từ ý tưởng, sơ đồ nguyên lý đến lập trình Firmware và sản xuất PCB.</p>
+                    <a href="https://zalo.me/0876988996" class="bg-sky-500 hover:bg-sky-600 text-white w-full py-3 rounded-lg font-bold transition-all transform hover:scale-105">Tư vấn kỹ thuật ngay</a>
+                </div>
+            </div>
+        </section>
+
         <section class="mb-10">
-            <h2 class="text-2xl font-bold text-yellow-400 mb-8 border-l-4 border-yellow-500 pl-4 uppercase">Đề Tài Đồ Án & Dự Án Vi Điều Khiển Tiêu Biểu</h2>
-            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-8 border-l-4 border-yellow-500 pl-4 uppercase">Đề Tài Đồ Án & Dự Án Thực Chiến</h2>
+            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden grid grid-cols-1 md:grid-cols-2 shadow-2xl">
                 <div class="md:border-r border-slate-700">
                     <div class="do-an-item text-sky-400 font-bold"><h3>01. Hệ thống ổn định nhiệt độ PID (STM32/PIC)</h3></div>
-                    <div class="do-an-item text-sky-400 font-bold"><h3>02. Điều khiển tốc độ động cơ DC PID</h3></div>
-                    <div class="do-an-item text-sky-400 font-bold"><h3>03. Mạch đo tốc độ vòng quay Encoder</h3></div>
-                    <div class="do-an-item"><h3>04. Thiết kế mạch điều khiển vị trí Servo PID</h3></div>
-                    <div class="do-an-item"><h3>05. Lập trình hệ thống điều khiển mực nước</h3></div>
-                    <div class="do-an-item"><h3>06. Mạch đếm sản phẩm dùng vi điều khiển 8051</h3></div>
-                    <div class="do-an-item"><h3>07. Đồ án Đèn giao thông thông minh</h3></div>
-                    <div class="do-an-item"><h3>08. Đồng hồ số LCD dùng AVR/Arduino</h3></div>
-                    <div class="do-an-item"><h3>09. Hệ thống báo động chống trộm hồng ngoại</h3></div>
-                    <div class="do-an-item"><h3>10. Đo nhiệt độ hiển thị LM35 - Lập trình vi xử lý</h3></div>
-                    </div>
+                    <div class="do-an-item text-sky-400 font-bold"><h3>02. Điều khiển xe sa hình - Thông báo âm thanh I2S</h3></div>
+                    <div class="do-an-item text-sky-400 font-bold"><h3>03. Máy cắt dây tự động điều khiển qua màn hình HMI</h3></div>
+                    <div class="do-an-item"><h3>04. Mạch đo tốc độ vòng quay Encoder chính xác cao</h3></div>
+                    <div class="do-an-item"><h3>05. Thiết kế mạch điều khiển vị trí Servo PID dùng Rust/C++</h3></div>
+                    <div class="do-an-item"><h3>06. Lập trình hệ thống giám sát mực nước qua WiFi</h3></div>
+                    <div class="do-an-item"><h3>07. Mạch đếm sản phẩm công nghiệp dùng 8051/STM32</h3></div>
+                </div>
                 <div>
-                    <div class="do-an-item"><h3>21. Giám sát nhiệt độ, độ ẩm qua IoT ESP32</h3></div>
-                    <div class="do-an-item"><h3>26. Mạch quang báo điều khiển qua Bluetooth/App</h3></div>
-                    <div class="do-an-item"><h3>28. Lập trình điều khiển thiết bị bằng giọng nói</h3></div>
+                    <div class="do-an-item"><h3>08. Giám sát nông nghiệp thông minh qua IoT ESP32</h3></div>
+                    <div class="do-an-item"><h3>09. Lập trình giao diện Qt điều khiển thiết bị qua Serial</h3></div>
+                    <div class="do-an-item"><h3>10. Hệ thống báo động hồng ngoại tích hợp App điện thoại</h3></div>
+                    <div class="do-an-item"><h3>11. Điều khiển thiết bị bằng giọng nói (Offline Speech)</h3></div>
+                    <div class="do-an-item"><h3>12. Mạch nâng áp (Boost Converter) 24V/2A ổn định dòng</h3></div>
+                    <div class="do-an-item"><h3>13. Robot dò đường tốc độ cao dùng cảm biến từ</h3></div>
                 </div>
             </div>
         </section>
@@ -95,7 +119,7 @@
 
     <footer class="bg-slate-900 pt-16 border-t border-slate-800" style="padding-bottom: 160px;">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h3 class="font-bold text-white uppercase text-xl mb-8 tracking-widest">LIÊN HỆ ĐIỆN TỬ HÀ NỘI</h3>
+            <h3 class="font-bold text-white uppercase text-xl mb-8 tracking-widest block">LIÊN HỆ ĐIỆN TỬ HÀ NỘI</h3>
             <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 inline-block text-left shadow-2xl">
                 <div class="space-y-4">
                     <p class="text-slate-200 flex items-center text-lg">
@@ -106,14 +130,19 @@
                         <span class="bg-green-500/20 p-2 rounded-lg text-green-400 mr-4">📞</span> 
                         <span><b>Hotline/Zalo:</b> 0876.988.996</span>
                     </p>
+                    <p class="text-slate-200 flex items-center text-lg">
+                        <span class="bg-sky-500/20 p-2 rounded-lg text-sky-400 mr-4">🌐</span> 
+                        <span><b>Website:</b> thietkemachdientu.vn</span>
+                    </p>
                 </div>
             </div>
+            <p class="mt-10 text-slate-500 text-sm">© 2026 thietkemachdientu.vn - Chuyên nghiệp dẫn đầu công nghệ vi điều khiển.</p>
         </div>
     </footer>
 
     <div class="fixed bottom-0 left-0 right-0 grid grid-cols-2 gap-4 p-4 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 md:hidden z-50">
-        <a href="tel:0876988996" class="bg-green-600 text-white text-center py-4 rounded-xl font-bold uppercase">Gọi điện</a>
-        <a href="https://zalo.me/0876988996" class="bg-blue-600 text-white text-center py-4 rounded-xl font-bold uppercase">Zalo Chat</a>
+        <a href="tel:0876988996" class="bg-green-600 text-white text-center py-4 rounded-xl font-bold uppercase shadow-lg">Gọi điện</a>
+        <a href="https://zalo.me/0876988996" class="bg-blue-600 text-white text-center py-4 rounded-xl font-bold uppercase shadow-lg">Zalo Chat</a>
     </div>
 
     <script>
@@ -125,7 +154,7 @@
                 currentSlide = (currentSlide + 1) % slides.length;
                 slides[currentSlide].classList.add('active');
             }
-        }, 3000);
+        }, 4000);
     </script>
 </body>
 </html>
